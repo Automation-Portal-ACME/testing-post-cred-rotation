@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testing-post-cred-rotation
+  description: "Building ee to test builder after creds have been rotated. "
+  tags:
+    - execution-environment
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/managed-by-location: github.com?repo=testing-post-cred-rotation&owner=Automation-Portal-ACME
+    ansible.io/scm-provider: github
+    backstage.io/source-template: template:default/ansible-execution-environment-builder-cloud-automation
+spec:
+  type: execution-environment
+  owner: user:default/admin
+  lifecycle: production
